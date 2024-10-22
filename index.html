@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            font-family:cursive;
+
+            
+        }
+        .main{
+            max-width: 1200px;
+            margin: 2rem auto;
+            text-align: center;
+            
+        }
+        .heading{
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading h1{
+            margin: 1rem;
+            display: inline-block;
+        }
+
+        .heading button{
+            width: fit-content;
+            height: 28px ;
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(95, 118, 234);  
+            font-size: 15px;
+            font-weight: 700;
+            color: white;
+
+        }
+
+
+        
+        .color-div{
+            height: 80px;
+            width: 120px;
+            margin: 10px 10px;    
+            display: inline-flex; 
+            justify-content: center;
+            align-items: center;   
+            /* border: 2px solid black; */
+            border-radius: 5px;  
+                     
+            
+        }
+
+        .color-box{
+            width: 90%;
+            height: 60px;
+            margin: 20px auto;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .color-div:hover{
+            border: 1px solid black;
+            cursor: pointer;
+        }
+
+        .hover{
+            cursor: pointer;
+            transition: ease-in-out;
+        }
+
+        .color-div div{
+            width: fit-content;
+            height: fit-content;
+            padding: 5px 10px;
+            border-radius: 5px;
+            /* background-color: white; */
+            color: white;
+            cursor: pointer;
+
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px); 
+            -webkit-backdrop-filter: blur(10px); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="heading">
+            <h1>Random Color Generator</h1>
+            <!-- color container div -->
+            <button onclick=randomColorDivGenrator()>Generate</i></button>
+        </div>    
+        <div class="color-box">
+            <span>
+            Click on the genrate Button to Genrate Color!
+            </span>
+        </div>    
+        <div class="color-container">
+
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
